@@ -3,7 +3,6 @@
 Unofficial PyTorch implementation of Faster Projected GAN introduced in the paper [Faster Projected GAN: Towards Faster
 Few-Shot Image Generation](https://arxiv.org/abs/2403.08778v1).
 
-## Results
 Results on the AnimalFace-cat dataset (160 images) provided by the authors of FastGAN :
 
 <div align='center'>
@@ -26,7 +25,7 @@ cd Faster-Projected-GAN
 pip install -r requirements.txt
 ```
 
-## Using Faster PG in your own project
+## Usage
 ```
 from discriminator import ProjectedGANDiscriminator
 D = ProjectedGANDiscriminator()
@@ -37,7 +36,7 @@ from generator import FasterProjectedGANGenerator
 G = FasterProjectedGANGenerator()
 ```
 
-For a quick start, try the [Colab notebook](https://colab.research.google.com/drive/1szFFNKWGomsLt4-95aFGVxg8suv4J7jK)
+For a quick start, you can also try our  [Colab notebook](https://colab.research.google.com/drive/1szFFNKWGomsLt4-95aFGVxg8suv4J7jK)
 
 ## Citation
 ```bibtex
@@ -70,4 +69,6 @@ For a quick start, try the [Colab notebook](https://colab.research.google.com/dr
       url                = {https://arxiv.org/abs/2403.08778}, 
 }
 ```
+---
+
 If this repo is helpful, please help to ⭐ it or recommend it to your friends 😊.
