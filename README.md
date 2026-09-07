@@ -42,10 +42,6 @@ D = ProjectedGANDiscriminator()
 ### Quick Start
 If you want to use the model without installing anything locally, you can also try our [Colab notebook](https://colab.research.google.com/drive/1szFFNKWGomsLt4-95aFGVxg8suv4J7jK).
 
-## Contributing
-
-Contributions are welcome! If you want to improve this implementation, fix a bug, or add new features, feel free to open an issue or submit a pull request.
-
 ## Citation
 ```bibtex
 @misc{liu2021fasterstabilizedgantraining,
@@ -77,6 +73,9 @@ Contributions are welcome! If you want to improve this implementation, fix a bug
       url                = {https://arxiv.org/abs/2403.08778}, 
 }
 ```
+## Contributing
+
+Contributions are welcome! If you want to improve this implementation, fix a bug, or add new features, feel free to open an issue or submit a pull request.
 
 ---
 
