@@ -10,7 +10,7 @@ Few-Shot Image Generation](https://arxiv.org/abs/2403.08778v1).<br><br><br><br>
 <br><br><br>
 
 ## Introduction
-Faster Projected GAN is a few shot image generation Deep learning model. With data over 100 it's can product fastly better images.
+Faster Projected GAN is a few shot image generation Deep learning model. With data over 100 it's can product fastly better images. For example, gif above represent generated images using AnimalFace-cat (containing 160 cat face images) provided by the authors of FastGAN that you can obtained [here](https://drive.google.com/file/d/1aAJCZbXNHyraJ6Mi13dSbe7pTyfPXha0/view).
 
 ## Installation
 Clone repo
