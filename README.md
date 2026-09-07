@@ -3,10 +3,10 @@
 Unofficial PyTorch implementation of Faster Projected GAN introduced in the paper [Faster Projected GAN: Towards Faster
 Few-Shot Image Generation](https://arxiv.org/abs/2403.08778v1).
 
-Results on the AnimalFace-cat dataset (160 images) provided by the authors of FastGAN :
+Results on the AnimalFace-cat dataset (160 images) provided by the authors of FastGAN:
 
 <div align='center'>
- <img alt="Results in AnimalFace-cat of 160 data" width=450 src="outputs.gif">
+ <img alt="Results on the AnimalFace-cat dataset" width=450 src="outputs.gif">
 </div>
 
 ## Introduction
@@ -26,17 +26,25 @@ pip install -r requirements.txt
 ```
 
 ## Usage
-```
+
+### Integrating into your project
+You can easily import and initialize the generator and discriminator in your own Python scripts:
+
+```python
+from generator import FasterProjectedGANGenerator
 from discriminator import ProjectedGANDiscriminator
+
+# Initialize models
+G = FasterProjectedGANGenerator()
 D = ProjectedGANDiscriminator()
 ```
 
-```
-from generator import FasterProjectedGANGenerator
-G = FasterProjectedGANGenerator()
-```
+### Quick Start
+If you want to use the model without installing anything locally, you can also try our [Colab notebook](https://colab.research.google.com/drive/1szFFNKWGomsLt4-95aFGVxg8suv4J7jK).
 
-For a quick start, you can also try our  [Colab notebook](https://colab.research.google.com/drive/1szFFNKWGomsLt4-95aFGVxg8suv4J7jK)
+## Contributing
+
+Contributions are welcome! If you want to improve this implementation, fix a bug, or add new features, feel free to open an issue or submit a pull request.
 
 ## Citation
 ```bibtex
@@ -69,6 +77,7 @@ For a quick start, you can also try our  [Colab notebook](https://colab.research
       url                = {https://arxiv.org/abs/2403.08778}, 
 }
 ```
+
 ---
 
 If this repo is helpful, please help to ⭐ it or recommend it to your friends 😊.
