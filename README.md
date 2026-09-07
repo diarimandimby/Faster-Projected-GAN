@@ -4,14 +4,14 @@ Unofficial PyTorch implementation of Faster Projected GAN introduced in the pape
 Few-Shot Image Generation](https://arxiv.org/abs/2403.08778v1).
 
 ## Results
-Results on AnimalFace-cat (160 images) provided by the authors of FastGAN that you can obtained [here](https://drive.google.com/file/d/1aAJCZbXNHyraJ6Mi13dSbe7pTyfPXha0/view)).
+Results on the AnimalFace-cat dataset (160 images) provided by the authors of FastGAN :
 
 <div align='center'>
  <img alt="Results in AnimalFace-cat of 160 data" width=450 src="outputs.gif">
 </div>
 
 ## Introduction
-A deep learning model for few-shot image generation that trains quickly and yields high-quality results with limited data.
+A deep learning model designed for few-shot image generation. It trains rapidly and yields high-quality images, even with a limited dataset (e.g., fewer than 100 samples).
 
 ## Installation
 1. Clone repo
