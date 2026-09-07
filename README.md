@@ -1,23 +1,29 @@
  # Faster Projected GAN
 
 Unofficial PyTorch implementation of Faster Projected GAN introduced in the paper [Faster Projected GAN: Towards Faster
-Few-Shot Image Generation](https://arxiv.org/abs/2403.08778v1).<br><br><br><br>
+Few-Shot Image Generation](https://arxiv.org/abs/2403.08778v1).
+
+## Results
+Results on AnimalFace-cat (160 images) provided by the authors of FastGAN that you can obtained [here](https://drive.google.com/file/d/1aAJCZbXNHyraJ6Mi13dSbe7pTyfPXha0/view)).
 
 <div align='center'>
  <img alt="Results in AnimalFace-cat of 160 data" width=450 src="outputs.gif">
 </div>
 
-<br><br><br>
-
 ## Introduction
-Faster Projected GAN is a few shot image generation Deep learning model. With data over 100 it's can product fastly better images. For example, gif above represent generated images using AnimalFace-cat (containing 160 cat face images) provided by the authors of FastGAN that you can obtained [here](https://drive.google.com/file/d/1aAJCZbXNHyraJ6Mi13dSbe7pTyfPXha0/view).
+A deep learning model for few-shot image generation that trains quickly and yields high-quality results with limited data.
 
 ## Installation
-Clone repo
+1. Clone repo
 
 ```bash
 git clone https://github.com/diarimandimby/Faster-Projected-GAN/
 cd Faster-Projected-GAN
+```
+
+2. Install requirements
+```bash
+pip install -r requirements.txt
 ```
 
 ## Using Faster PG in your own project
