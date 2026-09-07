@@ -1,14 +1,16 @@
  # Faster Projected GAN
 
-This repository contains PyTorch implementation of Faster Projected GAN introduced in the paper [Faster Projected GAN: Towards Faster
+Unofficial PyTorch implementation of Faster Projected GAN introduced in the paper [Faster Projected GAN: Towards Faster
 Few-Shot Image Generation](https://arxiv.org/abs/2403.08778v1).<br><br><br><br>
 
 <div align='center'>
- <img alt="YOUR-ALT-TEXT" width=450 src="outputs.gif">
+ <img alt="Results in AnimalFace-cat of 160 data" width=450 src="outputs.gif">
 </div>
 
 <br><br><br>
 
+## Introduction
+Faster Projected GAN is a few shot image generation Deep learning model. With data over 100 it's can product fastly better images.
 
 ## Installation
 Clone repo
