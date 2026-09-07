@@ -1,7 +1,9 @@
  # Faster Projected GAN
 
 Unofficial PyTorch implementation of Faster Projected GAN introduced in the paper [Faster Projected GAN: Towards Faster
-Few-Shot Image Generation](https://arxiv.org/abs/2403.08778v1).<br>
+Few-Shot Image Generation](https://arxiv.org/abs/2403.08778v1).
+
+## Results
 Results on the AnimalFace-cat dataset (160 images) provided by the authors of FastGAN :
 
 <div align='center'>
