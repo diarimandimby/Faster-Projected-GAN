@@ -1,4 +1,4 @@
-# Module for preparing dataset and Training Faster Projected GAN
+# Module for dataset preparation and training Faster Projected GAN.
 # Author : Diarimandimby Riantsoa Kanto
 
 import torch
