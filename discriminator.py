@@ -78,6 +78,7 @@ class DiscriminatorL4(nn.Module):
   def forward(self, input):
     return self.block(input)
 
+# Adapted from: https://github.com/autonomousvision/projected-gan/blob/main/pg_modules/projector.py
 class CCM(nn.Module):
   def __init__(self, in_channels, out_channels):
     super().__init__()
@@ -111,6 +112,7 @@ class CSM(nn.Module):
 
     return self.conv(output)
 
+# Adapted from https://github.com/autonomousvision/projected-gan/blob/main/pg_modules/discriminator.py
 class ProjectedGANDiscriminator(nn.Module):
   def __init__(self):
     super().__init__()
