@@ -17,7 +17,7 @@ from torchvision.transforms.v2 import PILToTensor
 device = (torch.device('cuda') if torch.cuda.is_available() else torch.device('cpu'))
 
 def createData(paths, output_res):
-  pbar = tqdm(paths, desc="Prétraitements des images")
+  pbar = tqdm(paths, desc="Image preprocessing")
   nb_img = 0
   list_images = []
   for file in pbar:
