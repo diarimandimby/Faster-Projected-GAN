@@ -42,15 +42,15 @@ def train(
   n_epochs,
   batch_size,
   data_loader,
-  checkpoint_path,
-  log_path,
+  checkpoint_dir,
+  gen_dir,
   output_res, 
   glr=0.0002, 
   dlr=0.0002, 
   betas=(0.0, 0.99), 
   eps=1e-8,
-  p=1, 
-  s=100,
+  gen_every=10, 
+  save_every=100,
   checkpoint_file=''
 ):
   discriminator = ProjectedGANDiscriminator().to(device)
@@ -116,7 +116,7 @@ def train(
       
       gen_ema.update_parameters(generator)
 
-    if((epoch + 1) % p == 0):
+    if((epoch + 1) % gen_every == 0):
 
       with torch.no_grad():
         sample_images = gen_ema(test_latents)
@@ -133,7 +133,7 @@ def train(
           axes[nrow, ncol].axis('off')
 
       fig.savefig(
-        f"{log_path}/{epoch + 1}.png",
+        f"{gen_dir}/{epoch + 1}.png",
         transparent=False,
         dpi=80,
         pad_inches=0,
@@ -142,7 +142,7 @@ def train(
       
       plt.close(fig)
 
-    if((epoch + 1) % s == 0):
+    if((epoch + 1) % save_every == 0):
       torch.save({
         'epoch': epoch + 1,
         'generator': generator.state_dict(),
@@ -150,6 +150,6 @@ def train(
         'gen_ema': gen_ema.state_dict(),
         'opt_G': opt_G.state_dict(),
         'opt_D': opt_D.state_dict(),
-      }, f'{checkpoint_path}/Faster_pg_checkpoint_epoch_{epoch + 1}.pth')
+      }, f'{checkpoint_dir}/Faster_pg_checkpoint_epoch_{epoch + 1}.pth')
 
     print(f"g_loss : {G_loss.item()}, dgen_loss : {Dgen_loss.item()}, dreal_loss : {Dreal_loss.item()}")
