@@ -15,15 +15,16 @@ A deep learning model designed for few-shot image generation. It trains rapidly 
 ## Installation
 1. Clone repo
 
-```bash
-git clone https://github.com/diarimandimby/Faster-Projected-GAN/
-cd Faster-Projected-GAN
-```
+    ```bash
+    git clone https://github.com/diarimandimby/Faster-Projected-GAN/
+    cd Faster-Projected-GAN
+    ```
 
 2. Install requirements
-```bash
-pip install -r requirements.txt
-```
+
+   ```bash
+   pip install -r requirements.txt
+   ```
 
 ## Usage
 
