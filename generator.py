@@ -1,4 +1,4 @@
-# generator of Faster Projected GAN
+# Generator of Faster Projected GAN
 #
 # Sources: 
 #   - https://github.com/odegeasslbc/FastGAN-pytorch/blob/main/models.py
