@@ -5,13 +5,13 @@ Few-Shot Image Generation](https://arxiv.org/abs/2403.08778v1).
 
 Results on the AnimalFace-cat dataset (160 images, provided by FastGAN authors) after training for less than 237 kimg:
 
-<br><br>
+<br>
 
 <div align='center'>
  <img alt="Results on the AnimalFace-cat dataset" width=450 src="outputs.gif">
 </div>
 
-<br><br><br>
+<br><br>
 
 ---
 
