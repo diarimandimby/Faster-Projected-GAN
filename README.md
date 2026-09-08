@@ -11,7 +11,9 @@ Results on the AnimalFace-cat dataset (160 images, provided by FastGAN authors) 
  <img alt="Results on the AnimalFace-cat dataset" width=450 src="outputs.gif">
 </div>
 
-<br><br>
+<br><br><br>
+
+---
 
 ## Introduction
 A deep learning model designed for few-shot image generation. It trains rapidly and yields high-quality images, even with a limited dataset (e.g., fewer than 100 samples).
