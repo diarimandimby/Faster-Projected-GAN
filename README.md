@@ -45,7 +45,7 @@ D = ProjectedGANDiscriminator()
 ```
 
 ### Quick Start
-If you want to use the model without installing anything locally, you can also try our [Colab notebook](https://colab.research.google.com/drive/1szFFNKWGomsLt4-95aFGVxg8suv4J7jK).
+If you want to test the model training without installing anything locally, you can also try our [Colab notebook](https://colab.research.google.com/drive/1szFFNKWGomsLt4-95aFGVxg8suv4J7jK).
 
 ## Citation
 ```bibtex
