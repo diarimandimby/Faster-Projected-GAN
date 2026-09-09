@@ -8,7 +8,7 @@ Results on the AnimalFace-cat dataset (160 images, provided by FastGAN authors) 
 <br>
 
 <div align='center'>
- <img alt="Results on the AnimalFace-cat dataset" width=450 src="outputs.gif">
+ <img alt="Results on the AnimalFace-cat dataset" src="outputs_.gif">
 </div>
 
 <br>
