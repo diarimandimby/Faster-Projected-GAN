@@ -138,9 +138,11 @@ class FasterProjectedGANGenerator(nn.Module):
         feat32 = self.upblocks[2](feat16)
 
         feat64 = self.skip_layer_excitation[0](feat4, self.upblocks[3](feat32))
+        
+        feat_last = feat64
 
         if(self.output_res >= 128):
-            feat_last = self.skip_layer_excitation[1](feat8, self.upblocks[4](feat64))
+            feat_last = self.skip_layer_excitation[1](feat8, self.upblocks[4](feat_last))
 
         if(self.output_res >= 256):
             feat_last = self.skip_layer_excitation[2](feat16, self.upblocks[5](feat_last))
